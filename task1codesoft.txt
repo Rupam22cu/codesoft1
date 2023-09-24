@@ -1,0 +1,48 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+class grade{
+char name[10];
+char grade_math[5];
+char grade_physics[5];
+char grade_chemistry[5];
+char grade_biology[5];
+char A=4;
+char B=3;
+char C=2;
+char D=1;
+public:
+void input(){
+cout<<"Name of the student:";
+cin>>name;
+cout<<"Grade in math:";
+cin>>grade_math;
+cout<<"Grade in physics:";
+cin>>grade_physics;
+cout<<"Grade in chemistry:";
+cin>>grade_chemistry;
+cout<<"Grade in biology:";
+cin>>grade_biology;
+}
+int avg(){
+return (A+B+C+D)/4;
+}
+};
+int main() {
+grade stud1;
+stud1.input();
+int result=stud1.avg();
+if(result==1){
+cout<<"A";
+}
+else if(result==2){
+cout<<"B";
+}
+else if(result==3){
+    cout<<"C";
+}
+else{
+    cout<<"D";
+}
+    return 0;
+}

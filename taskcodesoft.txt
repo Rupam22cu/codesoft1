@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main() {
+    char oper;
+    int a,b;
+    cout<<"take first number:-";
+    cin>>a;
+    cout<<"take operator:-";
+    cin>>oper;
+    cout<<"take second number:-";
+    cin>>b;
+    switch (oper){
+        case '+':
+        cout<<a<<"+"<<b<<"="<<a+b;
+        break;
+        case '-':
+        cout<<a<<"-"<<b<<"="<<a-b;
+        break;
+        case '*':
+        cout<<a<<"*"<<b<<"="<<a*b;
+        break;
+        case '/':
+        cout<<a<<"/"<<b<<"="<<a/b;
+        break;
+        default:
+        cout<<"something went wrong";
+        break;
+    }
+
+    return 0;
+}
